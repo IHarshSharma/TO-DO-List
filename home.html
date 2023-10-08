@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>TODO List</title>
+</head>
+<body>
+    <div class="taskbar">
+        <div id="name">
+            <h3>TODO List</h3>
+        </div>
+        <a id="home" href="/home.html">Home</a>
+        <a id="about" href=".about">About</a>
+        <a id="items" href=".items">Current Score</a>
+        <a id="contact" href=".contact-me">Contact</a>
+    </div>
+    <div class="maincontainer">
+        <div class="header">
+            <h3>TO-DO List <img src="icon.png"></h3>
+        </div>
+        <div class="add-items">
+            <input type="text" placeholder=" Add Tasks to the list " id="input-items" >
+            <button id="add-button" onclick="addTask()">Add</button>
+            <button id="clear-list" onclick="clearStorage()">Clear List</button>
+        </div>
+        <ul id="list-container">
+            <!-- <li class="checked">Task 1</li>
+            <li>Task 2</li>
+            <li>Task 3</li> -->
+        </ul>
+    </div>
+    <div class="about">
+        <h3 id="heading-about">About</h3>
+        <div class="definition"><p>A to-do list is a simple but powerful organizational tool used to track tasks and manage one's daily responsibilities. Typically, it consists of a written or digital list of items, each representing a specific task or goal to be accomplished. To-do lists help individuals prioritize, plan, and stay focused on their objectives, ensuring that nothing important is forgotten. They can range from handwritten notes to sophisticated digital apps, allowing for customization and flexibility in managing tasks. By breaking down larger goals into smaller, manageable steps, to-do lists enhance productivity and provide a sense of accomplishment as items are checked off or completed.</p>
+        </div>
+    </div>
+    <div class="items">
+        <h2 id="items-head">Current Score</h2>
+        <div class="score">
+            <h3 id="score-head">Scores:</h3>
+            <div class="item-elements">
+                <p id="no-of-completed">Completed Tasks: <span id="nct">0</span></p>
+                <p id="no-of-uncompleted">Uncompleted Tasks: <span id="nuct">0</span></p>
+                <p id="total-no-tasks">All Tasks: <span id="at">0</span></p>
+            </div>
+            <div class="circular-score">
+                <div class="outer">
+                    <div class="inner">
+                        <div id="number">
+                            <span id="percentage">0</span>%
+                        </div>
+                    </div>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                    <defs>
+                       <linearGradient id="GradientColor">
+                          <stop offset="0%" stop-color="#e91e63" />
+                          <stop offset="100%" stop-color="#673ab7" />
+                       </linearGradient>
+                    </defs>
+                    <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+            </svg>
+            </div>
+        </div>
+        <div class="contact-me">
+            <h3 class="contact-head">Contact Me:</h3>
+            <p id="contact-para"> Made with <span class="heart">&hearts;</span> by Harsh Sharma </p>
+            <p id="contact-email">Email me:<a href="#" id="email">ha473945@gmail.com</a></p>
+            <p id="contact-instagram">Instagram me:<a href="https://www.instagram.com/i_harsharma_/" id="ig">i_harsharma_</a></p>
+            <p id="contact-linkedin">LinkedIn profile:<a href="https://www.linkedin.com/in/harsh-thebot" id="linkedin">Harsh Sharma</a></p>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
