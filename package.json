@@ -1,0 +1,16 @@
+{
+  "name": "to-do-list",
+  "version": "1.0.0",
+  "description": "The provided HTML document appears to be a web application for managing a to-do list. The application features a visually appealing user interface with a taskbar, task input field, and a list of tasks. Users can add tasks to the list, mark them as completed, and clear the list. Additionally, the application keeps track of task statistics, such as the number of completed and uncompleted tasks, and displays them in a circular progress chart.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2"
+  }
+}
